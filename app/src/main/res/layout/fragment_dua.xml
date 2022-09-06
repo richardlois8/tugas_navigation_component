@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentDua"
+    android:padding="30dp">
+
+
+    <TextView
+        android:id="@+id/tvHalaman"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ini halaman kedua"
+        android:textSize="25sp"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="20dp"
+        />
+
+    <TextView
+        android:id="@+id/tvNama"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@id/tvHalaman"
+        android:layout_alignParentLeft="true"
+        android:text="Nama Kamu : "
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etNama"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/tvHalaman"
+        android:textSize="20sp"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/tvNama" />
+
+    <Button
+        android:id="@+id/btnMovetoFragmentKetiga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go To Halaman Ketiga"
+        android:layout_below="@id/etNama"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/btnMovetoFragmentSatu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go To Halaman Satu"
+        android:layout_below="@id/btnMovetoFragmentKetiga"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+</RelativeLayout>

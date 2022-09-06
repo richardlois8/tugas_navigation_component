@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tugas.HomeFragment"
+    android:background="@drawable/background">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/tvHello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:text="Halo, "
+        android:textColor="@color/black"
+        android:textSize="40sp" />
+
+    <EditText
+        android:id="@+id/etTahun"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvHello"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:hint="Tahun Kelahiran" />
+
+    <Button
+        android:id="@+id/btnHitung"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hitung Umur"
+        android:layout_below="@id/etTahun"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#3F51B5"
+        android:layout_marginTop="12dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnProfil"
+        android:src="@drawable/ic_profile"
+        android:backgroundTint="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dp" />
+
+</RelativeLayout>
